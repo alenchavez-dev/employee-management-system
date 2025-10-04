@@ -21,8 +21,8 @@ Supports adding managers with subordinates, zero-padded IDs, and **left-aligned*
     Printing Employee List
     0123: Alen
     Alen's Employees
-    0456: Dddjdj
-    2344: Jnsjdnjn
+    1111: Jason
+    2222: Mike
 
 ## 💡 Notes
 - Empty subordinate name → `Unknown`

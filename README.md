@@ -1,35 +1,44 @@
-# 🧾 Employee Management System
+# 🧾 Employee Management System (SQL Edition)
 
-Simple Python console app modeling **Employees** and **Managers** (inheritance + composition).  
-Supports adding managers with subordinates, zero-padded IDs, and **left-aligned** output for clarity.
+A console-based Python application that models **Employees** and **Managers** using **SQLite** for persistent storage.  
+This upgraded version replaces in-memory lists with a relational database, adds CRUD operations, and includes **sample data** on first run for instant testing.
+
+---
 
 ## 🚀 Features
-- `Employee` with name + zero-padded ID
-- `Manager(Employee)` with a list of subordinates (composition)
-- CLI prompts to add employees/managers and their teams
-- Clean, left-aligned printout of the organization
+- 🧍 **Employees** with unique zero-padded IDs and names  
+- 👔 **Managers** with assignable subordinates (one-to-many relationships)  
+- 🧠 **SQLite database (`company.db`)** for persistent employee and manager data  
+- ✍️ **Create, Read, Update, and Delete** employees directly from the console  
+- 🔗 Assign subordinates to managers with clean JOIN queries  
+- 🧪 **Sample managers & employees** auto-inserted on first run for easy testing:
+  - Alice Johnson → Manager of Carla & David  
+  - Bob Smith → Manager of Elena  
+- 📊 Manager–subordinate teams view with SQL JOIN
 
-## 📂 Structure
-    employee-management-system/
-    ├── employee_management.py
-    └── README.md
+---
 
-## ▶️ Run
-    python3 employee_management.py
+## 🧰 Tech Stack
+- **Language:** Python 3  
+- **Database:** SQLite (`company.db`, created automatically)  
+- **No external libraries** — runs using only the Python standard library
 
-## 📝 Sample Output
-    Printing Employee List
-    0123: Alen
-    Alen's Employees
-    1111: Jason
-    2222: Mike
+---
 
-## 💡 Notes
-- Empty subordinate name → `Unknown`
-- Empty subordinate id → `9999` (still shown zero-padded by display)
+## 📂 Project Structure
+employee-management-system/
+├── main.py
+├── README.md
+├── LICENSE
+└── .gitignore
 
-## 🧑‍💻 Author
-Alen Chavez
+yaml
+Copy code
 
-## 📝 License
-MIT License
+---
+
+## ▶️ How to Run
+```bash
+git clone https://github.com/alenchavez-dev/employee-management-system.git
+cd employee-management-system
+python3 main.py

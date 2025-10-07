@@ -27,11 +27,12 @@ This upgraded version replaces in-memory lists with a relational database, adds 
 
 ## 📂 Project Structure
 employee-management-system/
+```
 ├── main.py
 ├── README.md
 ├── LICENSE
 └── .gitignore
-
+```
 yaml
 Copy code
 

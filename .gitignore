@@ -1,0 +1,7 @@
+# Ignore SQLite database files
+company.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
